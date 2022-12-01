@@ -486,7 +486,7 @@ const Product = ({
         firstSupplierVid={firstSupplierVid}
       />
       {/* <div style={{marginTop: "55px"}}> */}
-      <div>
+      <div style={{marginTop: "55px"}}>
         <Breadcrumbs breadcrumbs={product.breadcrumbs} />
       </div>
       <Container>

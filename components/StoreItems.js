@@ -51,7 +51,7 @@ export default function StoreItems({
   const dispatch = useDispatch();
 
   const [loadMoreScrollPage, setLoadMoreScrollPage] = useState(false);
-
+  const [searchTerm, setSearchTerm] = useState("");
   useEffect(() => {
     if (loadMoreScrollPage !== true) {
       setLoadMoreScrollPage(true);
@@ -90,7 +90,23 @@ export default function StoreItems({
       <div>
 
 
-      
+      <div className="searchj wrapj">
+                  <input
+                    type="text"
+                    className="searchTermj"
+                    placeholder="Search for Brands"
+                    onChange={e => {
+                      setSearchTerm(e.target.value);
+                    }}
+                    value={searchTerm}
+                  />
+                  <button type="submit" className="searchButtonj">
+                    <img
+                      className="afterloggedinsearchicon4 afterlogged"
+                      src="https://ik.imagekit.io/ofb/themes/Path_3_VlEL1XROsa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667559337696"
+                    />
+                  </button>
+                </div>
 
 
 
@@ -102,15 +118,23 @@ export default function StoreItems({
           loader={<h1>Loading...</h1>}
         >
           {storeItems &&
-            storeItems.map(item => {
-              return (
-                <StoreCard
-                  renderedBy={"sellers-page"}
-                  itemCard={item}
-                  key={item.id}
-                />
-              );
-            })}
+              storeItems
+                .filter(item => {
+                  if (searchTerm == "") {
+                    return item;
+                  } else if (item.title.toLowerCase().includes(searchTerm)) {
+                    return item;
+                  }
+                })
+                .map(item => {
+                  return (
+                    <StoreCard
+                      renderedBy={"sellers-page"}
+                      itemCard={item}
+                      key={item.id}
+                    />
+                  );
+                })}
         </InfiniteScroll>
       </div>
     </Wrapper>

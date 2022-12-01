@@ -3573,7 +3573,7 @@ p>a {
 }
 
 .nav_submenu {
-  padding-right: 28px;
+  padding-right: 15px;
 }
 
 #cars1 {
@@ -4423,7 +4423,7 @@ p>a {
 }
 
 .nav_link1 {
-  padding: 14px 70px;
+  padding: 14px 40px;
 }
 
 
@@ -6631,6 +6631,8 @@ ul.colors li:nth-child(4) {
 
   .navLink99 {
     display: flex;
+    width: 75%;
+    justify-content: space-between;
   }
 
   .nav_submenu a {
@@ -7397,4 +7399,8 @@ label.tab.tab-warning {
   .homecontents2-image-wrapper{
     height: 177px !important;
   }
+}
+
+.main-Reviews{
+  display: none;
 }

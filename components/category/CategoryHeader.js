@@ -118,7 +118,7 @@ const CategoryHeader = ({ data }) => {
     // marginTop: "6px", padding: "10px 0px !important"}}
     >
           <div className="bredcrumbcolor"><Link href={"/"}><a>Home</a></Link> / {data.description}</div>
-          <div style={{display:"flex"}} className="item-row-picker">
+          {/* <div style={{display:"flex"}} className="item-row-picker">
             <div className="item-row-picker9">
             <img src="https://ik.imagekit.io/ofb/themes/Component_19___80_ImWnW3KJ1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667534859522"/>
             </div>
@@ -132,7 +132,7 @@ const CategoryHeader = ({ data }) => {
             <img src="https://ik.imagekit.io/ofb/themes/Component_85___5_XeI_-sN9d.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667534859658"/>
             </div>
 
-          </div>
+          </div> */}
         </div>
         <div className="sub-nav-menu">
           <div className="sub-nav-title-desc-wrapper">

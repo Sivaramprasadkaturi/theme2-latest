@@ -77,7 +77,9 @@ const HomeBanner = ({menu}) => {
         <div className="homebanner-image-wrapper">
           <h1>Shop the Hottest Products</h1>
           <h6>Discover our extensive collection of all things electronics</h6>
-          <button>Explore</button>
+          <button><Link href={`/shop/all-products/phone-wearables`}>
+                    <a>Explore</a>
+                  </Link></button>
         </div>
       </div>
     </>

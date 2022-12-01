@@ -164,24 +164,9 @@ const Facet = ({
 
   return (
     <>
-      <Wrapper>
+      <Wrapper className={`main-${facet?.title}`}>
         
-      {/* <h2 className="text-lg lg:text-2xl productSortedAvailability">Availability</h2>
-        <div className="form-check col-md-12">
-                <input type="checkbox" className="form-check-input rangeCheck" id="range1" data-range="4999" readonly="true"/>
-                <label className="form-check-label" htmlFor="range1">In Stock</label>
-            </div>
-
-            <div className="form-check col-md-12">
-                <input type="checkbox" className="form-check-input rangeCheck" id="range1" data-range="4999" readonly="true"/>
-                <label className="form-check-label" htmlFor="range1">Express Shipping</label>
-            </div> */}
-
-        {/* {index !== 0 && <hr />} */}
-        {/* availability */}
-        
-
-            {/* availability */}
+      
 
         <h2
           onKeyDown={e => {

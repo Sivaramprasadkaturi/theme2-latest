@@ -113,7 +113,7 @@ export default function MiniCart({ close }) {
       <div className={classes.productImageWrapper}>
         <img
           className={classes.productImage}
-          src={`https://ik.imagekit.io/ofb/dev/store/20180522154/assets/items/largeimages/${itemCode}.jpg?tr=w-100,h-100,dpr-1,pr-true,f-auto`}
+          src={`https://ik.imagekit.io/ofb/starter/store/20180522154/assets/items/largeimages/${itemCode}.jpg?tr=w-100,h-100,dpr-1,pr-true,f-auto`}
           alt={`${title}`}
         />
       </div>

@@ -183,7 +183,6 @@ const Wrapper = styled.div`
 
   .icons {
     text-align: right;
-    // border-left: 1px solid #fff;
   }
   .text-secondary img {
     width: 27px;
@@ -204,7 +203,6 @@ const Wrapper = styled.div`
 
     .icons {
       text-align: right;
-      border-left: 1px solid #fff;
     }
 
   }
@@ -648,12 +646,12 @@ const TopBar = ({ menu, locale }) => {
               <Search />
             </div>
 
-            <div className="countryRegion">
+            {/* <div className="countryRegion">
               <h3 className="countryName">Country / Region</h3>
               <select className="country-region">
                 <option>United States (USD $)</option>
               </select>
-            </div>
+            </div> */}
 
 
             <div className="flex icons">
@@ -858,7 +856,7 @@ const TopBar = ({ menu, locale }) => {
           />
         </DynamicDrawer>
         <DynamicDrawer
-          style={{ width: isMobileState ? "90%" : "768px" }}
+          style={{ width: isMobileState ? "90%" : "340px" }}
           open={addToCartSuccess}
           onClose={() => dispatch(addToCartModalClose())}
         >
@@ -900,32 +898,27 @@ const TopBar = ({ menu, locale }) => {
             <div className="freeShippingDetails">
               <ul className="nav_link1">
                 <li className="nav_submenu">
-                  <a href="#home">Home</a>
+                  <a href="">Home</a>
                 </li>
                 <li className="nav_submenu"></li>
                 <li className="nav_submenu">
-                  <a href="#product">Product Theme</a>
+                  <Link href={`/shop/all-products/phone-wearables`}>
+                    <a>Phone & Wearables</a>
+                  </Link>
                 </li>
                 <li className="nav_submenu"></li>
                 <li className="nav_submenu">
-                  <a href="#sale">Sale</a>
+                <Link href={`/shop/all-products/camera-accessories`}>
+                    <a>Camera & Accessories</a>
+                  </Link>
                 </li>
                 <li className="nav_submenu"></li>
                 <li className="nav_submenu">
-                  <a href="#brands">Brands</a>
+                <Link href={`/shop/all-products/laptops-computers`}>
+                    <a>Laptops & Computers</a>
+                  </Link>
                 </li>
-                <li className="nav_submenu"></li>
-                <li className="nav_submenu">
-                  <a href="#lorem">Lorem</a>
-                </li>
-                <li className="nav_submenu"></li>
-                <li className="nav_submenu">
-                  <a href="#ipsum">Ipsum</a>
-                </li>
-                <li className="nav_submenu"></li>
-                <li className="nav_submenu">
-                  <a href="#dolor">Dolor</a>
-                </li>
+                
               </ul>
             </div>
             <div>

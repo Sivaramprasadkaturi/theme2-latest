@@ -78,7 +78,6 @@ const Stores = ({ storesProps, storesState }) => {
   const router = useRouter();
   const [stores, setStores] = useState(storesProps);
   const [storeItems, setStoreItems] = useState(stores?.[1]?.items || []);
-
   const [facets, setFacets] = useState([]);
   // const [numOfPages, setNumOfPages] = useState(0);
   const [query, setQuery] = useState([]);
@@ -92,7 +91,7 @@ const Stores = ({ storesProps, storesState }) => {
   const [numOfPages, setNumOfPages] = useState(storesState?.[0]?.numOfPages);
 
   const [currentScrollPage, setCurrentScrollPage] = useState(1);
-  const [searchTerm, setSearchTerm] = useState("");
+
 
   // const isMobileState = useSelector(
   //   state => state.mainReducer.isMobile,
@@ -333,19 +332,7 @@ const Stores = ({ storesProps, storesState }) => {
 
             <div>
               <div>
-                <div className="searchj wrapj">
-                  <input
-                    type="text"
-                    className="searchTermj"
-                    placeholder="Search for Brands"
-                  />
-                  <button type="submit" className="searchButtonj">
-                    <img
-                      className="afterloggedinsearchicon4 afterlogged"
-                      src="https://ik.imagekit.io/ofb/themes/Path_3_VlEL1XROsa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667559337696"
-                    />
-                  </button>
-                </div>
+                
 
                 {/* <div> */}
                 {/* //sortBy */}

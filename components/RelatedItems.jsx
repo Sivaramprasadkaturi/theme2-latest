@@ -120,13 +120,15 @@ function RelatedItems({ items, properties, relatedItem = false }) {
         >
           {items.map((item, idx) => {
             return (
+              <>
+             
               <ItemCard
                 item={item}
                 key={idx}
                 relatedItemProp={properties}
                 relatedItem={true}
               >
-                {/* <h3 className="relatedText">{title}</h3> */}
+                
                 {/* <Image
                   className="relatedCardImg"
                   width={300}
@@ -171,6 +173,7 @@ function RelatedItems({ items, properties, relatedItem = false }) {
 
 
               </ItemCard>
+              </>
             );
           })}
         </DynamicCarousel>

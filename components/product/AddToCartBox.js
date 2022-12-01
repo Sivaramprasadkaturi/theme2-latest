@@ -289,48 +289,7 @@ const AddToCartBox = ({ setNumberOfItems, numberOfItems, ...props }) => {
               className="color-checkboxes"
             >
               
-              {/* <div>
-                <div className="qtyControlsBox">
-                  <div className="qtyControlsBtns">
-                    <div
-                      className="qtyControlsMinus no-select"
-                      onClick={() => {
-                        if (numberOfItems - 1 > 0) {
-                          setNumberOfItems(numberOfItems - 1);
-                        }
-                      }}
-                      style={{ cursor: "pointer" }}
-                    >
-                      <span></span>
-                    </div>
-                    <input
-                      size={String(numberOfItems).length || 1}
-                      aria-label="change quantity"
-                      className="qtyControlsInput"
-                      type="text"
-                      value={numberOfItems}
-                      onChange={e => {
-                        handleSetQuantityInput(e);
-                      }}
-                      onBlur={handleOnInputBlur}
-                    />
-                    <div
-                      className="qtyControlsPlus no-select"
-                      onClick={() => setNumberOfItems(numberOfItems + 1)}
-                      style={{ cursor: "pointer" }}
-                    >
-                      <span></span>
-                    </div>
-                  </div>
-
-                  <div className="clearfix"></div>
-                </div>
-              </div> */}
-              {/* <div>
-              <input type="checkbox" className="blueColor"/> 
-              <input type="checkbox" className="yellowColor"/> 
-              <input type="checkbox" className="blackColor"/> 
-              </div> */}
+              
               <label style={{fontWeight: "500",
     color: "#37455E"}}>Colour</label>
               <ul className="colors">
